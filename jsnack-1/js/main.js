@@ -60,9 +60,9 @@ const macchine = [
     },
 ];
 
-// Dividi le automobili in 3 array separati: 
+// * dividi le automobili in 3 array separati: 
 
-// nel primo array solo le auto a benzina,
+// * nel primo array solo le auto a benzina,
 
 // const macchine_benzina = macchine.filter((macchina) => {
 //     if(macchina.alimentazione == "Benzina") {
@@ -77,15 +77,15 @@ const macchine = [
 
 const macchine_benzina = macchine.filter(macchina => macchina.alimentazione == "Benzina");
 
-// nel secondo solo le auto a diesel,
+// * nel secondo solo le auto a diesel,
 
 const macchine_diesel = macchine.filter(macchina => macchina.alimentazione == "Diesel");
 
-// nel terzo il resto delle auto.
+// * nel terzo il resto delle auto.
 
 const macchine_diverse = macchine.filter(macchina => macchina.alimentazione != "Benzina" && macchina.alimentazione != "Diesel");
 
-// Infine stampa separatamente i 3 array.
+// * infine stampa separatamente i 3 array.
 
 console.log(macchine_benzina);
 console.log(macchine_diesel);
